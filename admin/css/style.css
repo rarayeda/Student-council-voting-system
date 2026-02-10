@@ -1,0 +1,244 @@
+    /* CSS untuk styling card container */
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .card-container {
+      display: flex;
+      z-index: 2;
+      /* Menggunakan flexbox untuk menyusun card secara horizontal */
+      flex-wrap: wrap;
+      /* Memungkinkan card untuk memasukkan lebih banyak card ke dalam satu baris */
+      margin-left: 250px;
+      justify-content: flex-start;
+      /* Memberikan jarak antara card */
+    }
+
+    /* CSS untuk styling card */
+    .card {
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    .navigation ul li {
+      position: relative;
+      width: 100%;
+      list-style: none;
+      
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+
+    .navigation ul li a {
+      position: relative;
+      display: block;
+      padding-left: 15px;
+      width: 100%;
+      display: flex;
+      text-decoration: none;
+    }
+
+    .navigation ul li a .icon {
+      height: 60px;
+      line-height: 75px;
+      text-align: center;
+    }
+
+    .navigation ul li a .icon ion-icon {
+      font-size: 1.75rem;
+    }
+
+    .navigation ul li a .title {
+      padding: 0 10px;
+      height: 60px;
+      line-height: 60px;
+      text-align: start;
+      white-space: nowrap;
+    }
+
+    .side {
+      width: 250px;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+            /* Styling untuk link yang aktif */
+.side a.active {
+    background-color: #555;
+    width: 100%;
+}
+
+.side a:hover {
+
+    background-color: #555;
+}
+
+    .side .title {
+      padding: 15px;
+      text-decoration: none;
+      font-size: 16px;
+      color: #fff;
+      display: block;
+    }
+
+
+    .side .icon {
+      color: white;
+      padding-left: -10px;
+    }
+    .content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+
+    /* Table */
+table {
+    margin: auto;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+    font-size: 12px;
+    width: 100%;
+
+}
+
+.demo-table {
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.demo-table th,
+.demo-table td {
+    border-bottom: 1px solid #e1edff;
+    border-left: 1px solid #e1edff;
+    padding: 7px 17px;
+}
+
+.demo-table th,
+.demo-table td:last-child {
+    border-right: 1px solid #e1edff;
+}
+
+.demo-table td:first-child {
+    border-top: 1px solid #e1edff;
+}
+
+.demo-table td:last-child {
+    border-bottom: 0;
+}
+
+h1 caption {
+    caption-side: top;
+    margin-bottom: 10px;
+    padding-left: 120px;
+
+}
+
+/* Table Header */
+.demo-table thead th {
+    background-color: #395B64;
+    color: #FFFFFF;
+    border-color: #6ea1cc !important;
+    text-transform: uppercase;
+}
+
+/* Table Body */
+.demo-table thead td {
+    color: white;
+    background-color: gray;
+}
+
+.demo-table thead tr:nth-child(odd) td {
+    background-color: #A9A9A9;
+}
+
+.demo-table thead tr:hover th,
+.demo-table tbody tr:hover td {
+    background-color: #B9B4C7;
+    border-color: #B9B4C7;
+    transition: all .2s;
+}
+
+.button{
+  display: inline-block;
+  background-color: hsl(212, 100%, 46%);
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: var(--fw-reg);
+  margin-top: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+
+.btn{
+  display: inline-block;
+  background-color: #6A9C89;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: var(--fw-reg);
+  margin-top: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+
+.tombol{
+  display: inline-block;
+  background-color: #7D7C7C;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+
+/*modal*/
+ .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f00;
+}
